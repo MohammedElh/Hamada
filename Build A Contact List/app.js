@@ -38,11 +38,11 @@ function search() {
 }
 function Main(){
   rl.question('Enter a command (add/search/viewall/exit): ',(answer=>{
-    if (answer.toLowerCase()=='add'){addUser();} 
-    else if (answer.toLowerCase()=='search'){search();} 
+    if (answer.toLowerCase()=='add'){addUser();}
+    else if (answer.toLowerCase()=='search'){search();}
     else if (answer.toLowerCase()=='viewall'){view();}
-    else if (answer.toLowerCase()=='exit'){rl.close()}
-    else {Console.log('Command not Found, please try again!!');}
+    else if (answer.toLowerCase()=='exit'){rl.close();}
+    else {console.log('Command not Found, please try again!!');}
   } 
   ))
 }
