@@ -42,11 +42,12 @@ function Main(){
     else if (answer.toLowerCase()=='search'){search();}
     else if (answer.toLowerCase()=='viewall'){view();}
     else if (answer.toLowerCase()=='exit'){rl.close();}
-    else {console.log('Command not Found, please try again!!');}
+    else {console.log('Command not Found, please try again!!');
+  Main()}
   } 
   ))
 }
   rl.on('close',()=>{
-console.log('Goodbye!!')
+console.log('|| Goodbye!! ||')
   })
 Main();
